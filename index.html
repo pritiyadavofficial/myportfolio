@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="background-blur"></div>
+    
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#my-works" class="nav-link">My Works</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="home" class="section active">
+            <div class="glass-card">
+                    <h1>Hello, I'm <span class="name-col">Priti Yadav</span></h1>
+                    <p class="subtitle">I am a <span class="element"></span></p>
+                    <div class="social-icons">
+                        <a href="https://github.com"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://buymeacoffee.com"><i class="fas fa-coffee"></i></a>
+                    </div><br><br>
+                    <span class="cv"><a href="assets/files/priti-yadav.pdf" target="_blank" class="cv-btn">Get My CV</a></span>
+                    <div class="box-3">
+                        <div class="butn butn-three">
+                        </div>
+                    
+                    </div>
+            </div>
+            
+        </section>
+
+        <section id="about" class="section">
+            <div class="glass-card">
+                <h2>About Me</h2><br>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>I'm an enthusiastic recent graduate with a passion for generative AI and data engineering. Having completed my degree in computer science, I'm eager to apply my theoretical knowledge to real-world challenges in AI development.
+                            I've worked on several academic projects involving machine learning models and data pipelines, and I'm particularly fascinated by the potential of large language models and multimodal AI systems.
+                            <br>
+                            When I'm not experimenting with new frameworks or taking online courses to expand my skills, you can find me participating in AI hackathons or contributing to beginner-friendly open-source projects.</p>
+                    </div>
+                    <div class="about-image">
+                        <div><img src="assets/images/picofme.png" alt="" class="placeholder-image"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <div class="glass-card">
+                <h2>My Skills</h2>
+                <div class="skills-container">
+                    <div class="skill-category">
+                        <h3>AI Development</h3>
+                        <div class="skill" data-level="90%"><span class="skill-name"">Python</span><div class="progress"></div></div>
+                        <div class="skill" data-level="85%"><span class="skill-name">Machine Learning</span><div class="progress"></div></div>
+                        <div class="skill" data-level="70%"><span class="skill-name">Deep Learning</span><div class="progress"></div></div>
+                        <div class="skill" data-level="85%"><span class="skill-name">Prompt Engineering<div class="progress"></div></div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Data Engineering</h3>
+                        <div class="skill" data-level="50%"><span class="skill-name">ETL pipeline development</span><div class="progress"></div></div>
+                        <div class="skill" data-level="80%"><span class="skill-name">Data Preprocessing</span><div class="progress"></div></div>
+                        <div class="skill" data-level="83%"><span class="skill-name">SQL</span><div class="progress"></div></div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Tools</h3>
+                        <div class="skill" data-level="80%"><span class="skill-name">Git</span><div class="progress"></div></div>
+                        <div class="skill" data-level="92%"><span class="skill-name">Microsoft Excel</span><div class="progress"></div></div>
+                        <div class="skill" data-level="85%"><span class="skill-name">PowerBI</span><div class="progress"></div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="my-works" class="section">
+            <div class="glass-card">
+                <h2>My Works</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div ><img src="assets/images/hrd.jpg" class="project-image" alt=""></div>
+                        <h3>Heart Disease Prediction System</h3>
+                        <p>Machine learning algorithm to predict heart disease risk using medical and demographic data</p>
+                        <div class="project-tech">React, Node.js, MongoDB</div>
+                        <a href="#" class="project-link" style="color:rgb(255, 255, 255);">View Project</a>
+                    </div>
+                    <div class="project-card">
+                        <div ><img src="assets/images/spotify.jpg" class="project-image" alt=""></div>
+                        <h3>Spotify Data Analysis</h3>
+                        <p>Analyzing Spotify data reveals music trends, user behavior, and recommendations</p>
+                        <div class="project-tech">Vue.js, Firebase</div>
+                        <a href="#" class="project-link" style="color:rgb(255, 255, 255);">View Project</a>
+                    </div>
+                    <div class="project-card">
+                        <div ><img src="assets/images/story.jpg" class="project-image" alt=""></div>
+                        <h3>Creative Story Generator</h3>
+                        <p>Generates imaginative stories by completing prompts using AI language models.</p>
+                        <div class="project-tech">JavaScript, API Integration</div>
+                        <a href="#" class="project-link" style="color:rgb(255, 255, 255);">View Project</a>
+                    </div>
+                </div>
+                <div class="more-projects">
+                    <a href="https://github.com/pritiyadavofficial" class="more-projects-btn">More Projects <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="glass-card">
+                <h2>Get In Touch</h2>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+                <div class="contact-info">
+                    <p><i class="fas fa-envelope"></i> pritiyadav665432@gmail.com</p>
+                </div>
+                <div class="social-icons">
+                    <a href="https://github.com/pritiyadavofficial"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/prity-yadav"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://buymeacoffee.com"><i class="fas fa-coffee"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+   
+    
+
+    <script src="assets/scripts/script.js"></script>
+    <script src="https://unpkg.com/typeit@8.8.7/dist/index.umd.js"></script>
+
+    <script>
+        function getRandomColor() {
+            const r = Math.floor(Math.random() * 106) + 150; // 150-255 range
+            const g = Math.floor(Math.random() * 106) + 150; // 150-255 range
+            const b = Math.floor(Math.random() * 106) + 150; // 150-255 range
+            return `rgb(${r}, ${g}, ${b})`;
+        }
+        
+        new TypeIt(".element", {
+            speed: 75, // Typing speed
+            loop: true, // Loop the animation
+            afterStep: function (instance) {
+                instance.getElement().style.color = getRandomColor();
+            }
+        })
+        .type("Gen-AI Enthusiast") // Type "Developer"
+        .pause(1000) // Pause for 1 second
+        .delete() // Delete "Developer"
+        .pause(500) // Pause briefly
+        .type("Data Analyst") // Type "Enthusiast"
+        .pause(1000) // Pause for 1 second
+        .delete() // Delete "Enthusiast"
+        .pause(500) // Pause briefly
+        .type("Computer Science Student") // Type "Actor"
+        .pause(1000) // Pause for 1 second
+        .delete() // Delete "Actor"
+        .pause(500) // Pause briefly
+        .go(); // Start the animation
+    </script>
+
+
+    <!-- <script>
+        new TypeIt(".element", {
+            speed: 75, // Typing speed
+            loop: true, // Loop the animation
+            afterComplete: async (instance) => {
+                await instance.reset(); // Reset after each loop
+            }
+        })
+        .type("Student") // Type "Developer"
+        .pause(1000) // Pause for 1 second
+        .delete() // Delete "Developer"
+        .pause(500) // Pause briefly
+        .type("Gen-AI Developer") // Type "Enthusiast"
+        .pause(1000) // Pause for 1 second
+        .delete() // Delete "Enthusiast"
+        .pause(500) // Pause briefly
+        .type("Data Engineer") // Type "Actor"
+        .pause(1000) // Pause for 1 second
+        .delete() // Delete "Actor"
+        .pause(500) // Pause briefly
+        .go();
+    </script> -->
+    </body>
+    </html>
