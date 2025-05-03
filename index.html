@@ -6,6 +6,25 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+<script>
+    function SubForm (){
+        $.ajax({
+            url:"https://api.apispreadsheets.com/data/whIn8h37OMyFvUoP/",
+            type:"post",
+            data:$("#myForm").serializeArray(),
+            success: function(){
+                alert("Form Data Submitted :)")
+            },
+            error: function(){
+                alert("There was an error :(")
+            }
+        });
+    }
+</script>
 </head>
 <body>
     <div class="background-blur"></div>
@@ -119,15 +138,15 @@
         <section id="contact" class="section">
             <div class="glass-card">
                 <h2>Get In Touch</h2>
-                <form class="contact-form">
+                <form class="contact-form" id="myForm" >
                     <div class="form-group">
-                        <input type="text" placeholder="Your Name" required>
+                        <input type="text" placeholder="Your Name" name="Name" required>
                     </div>
                     <div class="form-group">
-                        <input type="email" placeholder="Your Email" required>
+                        <input type="email" placeholder="Your Email" name = "Email" required>
                     </div>
                     <div class="form-group">
-                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                        <textarea placeholder="Your Message" name="Message" rows="5" required></textarea>
                     </div>
                     <button type="submit" class="submit-btn">Send Message</button>
                 </form>
